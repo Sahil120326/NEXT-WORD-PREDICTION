@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: gboard-next-word-predictor
+    env: docker
+    plan: free
+    autoDeploy: true
+    region: oregon
+    healthCheckPath: /
+    # Dockerfile at repo root is auto-detected; PORT is provided by Render
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"

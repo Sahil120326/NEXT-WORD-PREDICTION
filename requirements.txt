@@ -1,0 +1,5 @@
+numpy
+nltk
+click
+flask
+gunicorn
